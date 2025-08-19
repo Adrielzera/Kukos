@@ -1,0 +1,31 @@
+site_name: Documentation for Kukos
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/lightbulb
+        name: Modo Claro
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/lightbulb-outline
+        name: Modo Escuro
+  features:
+    - navigation.tabs
+    - navigation.instant
+    - content.code.copy
+    - admonition
+    - header.autohide
+
+markdown_extensions:
+  - admonition
+  - pymdownx.superfences
+  - pymdownx.betterem
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.emoji
