@@ -1,4 +1,8 @@
 site_name: Documentation for Kukos
+site_url: https://adrielzera.github.io/Kukos/
+
+nav:
+  - Home: index.md
 
 theme:
   name: material
