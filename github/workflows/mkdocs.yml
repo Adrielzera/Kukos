@@ -2,23 +2,25 @@ name: Deploy MkDocs to GitHub Pages
 
 on:
   push:
-    branches: [main]  # ou 'master', se for o seu caso
+    branches: [main]  # Altere se estiver usando outro branch principal
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Setup Python
+      - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
 
-      - name: Install dependencies
+      - name: Install MkDocs and Material theme
         run: pip install mkdocs mkdocs-material
 
-      - name: Deploy documentation
-        working-directory: ./doc-reporting
-        run: mkdocs gh-deploy --force
+      - name: Deploy MkDocs site
+        run: |
+          cd doc-reporting
+          mkdocs gh-deploy --force
