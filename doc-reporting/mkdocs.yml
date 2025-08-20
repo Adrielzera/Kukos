@@ -1,24 +1,5 @@
 site_name: Documentation for Kukos
 
-name: Publicar Documentação
-on:
-  push:
-    branches:
-      - main  # ou 'master', dependendo da sua branch principal
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Configurar Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: 3.x
-      - name: Instalar MkDocs e dependências
-        run: pip install mkdocs mkdocs-material  # Adicione aqui outros temas ou plugins
-      - name: Publicar no GitHub Pages
-        run: mkdocs gh-deploy --force
-
 theme:
   name: material
   palette:

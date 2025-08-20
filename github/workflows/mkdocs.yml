@@ -1,0 +1,23 @@
+name: Publicar Documentação
+on:
+  push:
+    branches:
+      - main  # ou 'master'
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
+      - name: Instalar MkDocs e dependências
+        # O 'working-directory' diz ao 'pip' para olhar dentro de 'doc-reporting'
+        # e usar o 'requirements.txt' de lá, se existir.
+        run: pip install mkdocs mkdocs-material
+        working-directory: doc-reporting
+      - name: Publicar no GitHub Pages
+        # O 'working-directory' diz ao 'mkdocs' para rodar a partir de 'doc-reporting'
+        run: mkdocs gh-deploy --force
+        working-directory: doc-reporting
