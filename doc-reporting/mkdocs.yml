@@ -1,5 +1,6 @@
 site_name: Documentation for Kukos
 
+name: Publicar Documentação
 on:
   push:
     branches:
@@ -13,11 +14,9 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: 3.x
-      - name: Instalar MkDocs
-        run: pip install mkdocs
-      - name: Instalar tema e plugins (se necessário)
-        run: pip install mkdocs-material  # Exemplo, substitua pelo seu tema/plugins
-      - name: Construir e implantar o site do MkDocs
+      - name: Instalar MkDocs e dependências
+        run: pip install mkdocs mkdocs-material  # Adicione aqui outros temas ou plugins
+      - name: Publicar no GitHub Pages
         run: mkdocs gh-deploy --force
 
 theme:
