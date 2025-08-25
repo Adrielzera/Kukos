@@ -2,7 +2,8 @@ site_name: Documentation for Kukos
 site_url: https://adrielzera.github.io/Kukos/
 
 nav:
-  - Home: index.md
+  - Bug Report: index.md
+  - Test Case: gherkin.md
 
 theme:
   name: material

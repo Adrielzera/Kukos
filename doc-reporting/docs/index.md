@@ -291,6 +291,25 @@
 
     **Severidade:** 🟡 Média  
 
+
+---
+
+### USA-006 – Listas não podem ser arrastadas
+!!! warning "USA-006 – Listas não podem ser arrastadas"
+    **Descrição:**  
+    As listas possuem posição fixa após serem criadas e não é possível arrastá-las para reorganizar a ordem no quadro.
+
+    **Passos para Reproduzir:**<br>
+        1. Crie duas ou mais listas.  
+        2. Tente arrastar uma lista para a esquerda ou direita.  
+        3. Observe que a lista permanece fixa.  
+
+    **Comportamento Esperado:**  
+    O usuário deve conseguir arrastar e reposicionar listas horizontalmente no quadro.  
+
+    **Impacto:** Reduz a flexibilidade do Kanban e impede organização personalizada.  
+    **Severidade:** 🔴 Alta  
+
 ---
 
 ## Bugs
