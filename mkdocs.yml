@@ -9,14 +9,14 @@ theme:
   name: material
   palette:
     - scheme: default
-      primary: indigo
-      accent: indigo
+      primary: blue grey
+      accent: pink
       toggle:
         icon: material/lightbulb
         name: Modo Claro
     - scheme: slate
-      primary: indigo
-      accent: indigo
+      primary: blue grey
+      accent: pink
       toggle:
         icon: material/lightbulb-outline
         name: Modo Escuro
@@ -26,6 +26,9 @@ theme:
     - content.code.copy
     - admonition
     - header.autohide
+
+  icon:
+    logo: material/rocket-launch
 
 markdown_extensions:
   - admonition
