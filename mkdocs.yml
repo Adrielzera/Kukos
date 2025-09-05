@@ -9,14 +9,14 @@ theme:
   name: material
   palette:
     - scheme: default
-      primary: blue grey
-      accent: pink
+      primary: deep purple
+      accent: cyan
       toggle:
         icon: material/lightbulb
         name: Modo Claro
     - scheme: slate
-      primary: blue grey
-      accent: pink
+      primary: deep purple
+      accent: cyan
       toggle:
         icon: material/lightbulb-outline
         name: Modo Escuro
@@ -26,9 +26,9 @@ theme:
     - content.code.copy
     - admonition
     - header.autohide
-
   icon:
-    logo: material/rocket-launch
+    logo: material/rocket-launch   # Logo da nav 🚀
+  favicon: assets/favicon.png      # Favicon (colocar em assets/)
 
 markdown_extensions:
   - admonition

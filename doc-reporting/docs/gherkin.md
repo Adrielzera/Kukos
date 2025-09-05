@@ -15,6 +15,7 @@ Feature: Adicionar Lista
 
   Background:
     Given que estou no quadro do Kanban
+    And o quadro está vazio
 
   Scenario: Adicionar uma lista com um título válido
     When eu clico no botão "+ Adicionar outra lista"
