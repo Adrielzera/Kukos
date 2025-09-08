@@ -75,7 +75,7 @@ Feature: Gerenciar Tarefas no Kanban
     When eu clico na tarefa
     And eu clico no nome da Tarefa
     And eu preencho o campo para "Implementar autenticação"
-    And eu clico no botão "Editar nome da task"
+    And eu clico no botão "Editar Nome da task"
     Then a tarefa deve ser exibida como "Implementar autenticação"
 
   Scenario: Excluir uma tarefa
