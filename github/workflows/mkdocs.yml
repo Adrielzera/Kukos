@@ -2,8 +2,9 @@ name: Deploy MkDocs to GitHub Pages
 
 on:
   push:
-    branches: [main]  # Altere se estiver usando outro branch principal
-
+    branches: 
+      - [main]  # Altere se estiver usando outro branch principal
+      - gh-pages
 jobs:
   deploy:
     runs-on: ubuntu-latest
