@@ -1,3 +1,5 @@
+import '@4tw/cypress-drag-drop';
+
 Cypress.Commands.add('assertEmptyBoard', () => {
   cy.window().then((win) => {
     const board = JSON.parse(win.localStorage.getItem('kanban-boards'));
@@ -5,13 +7,13 @@ Cypress.Commands.add('assertEmptyBoard', () => {
   });
 });
 
-Cypress.Commands.add('assertEmptyCards', (card) => {
+Cypress.Commands.add('assertCards', (card, num) => {
     cy.window()
     .its('localStorage.kanban-boards')
     .then(JSON.parse)
     .then((boards) => boards.find((b) => b.title === card))
     .its('cards')
-    .should('have.length', 0);
+    .should('have.length', num);
 });
 
 Cypress.Commands.add('createTask', (list, task) => {
@@ -24,12 +26,20 @@ Cypress.Commands.add('createTask', (list, task) => {
     });
 });
 
-Cypress.Commands.add('dragTo', {prevSubject: "element"}, (subject, targetEl) => {
-    const dataTransfer = new DataTransfer();
-    cy.get(subject).trigger('dragstart', {
-        dataTransfer
+Cypress.Commands.add("dragAndDrop", { prevSubject: "element" }, (subject, targetSelector) => {
+    cy.wrap(subject).then($el => {
+      const text = $el.find("p").text(); // pega o nome da task
+      const dataTransfer = new DataTransfer();
+      dataTransfer.setData("text/plain", text);
+  
+      cy.wrap($el)
+        .trigger("dragstart", { dataTransfer });
+  
+      cy.get(targetSelector)
+        .trigger("dragenter", { dataTransfer })
+        .trigger("dragover", { dataTransfer })
+        .trigger("drop", { dataTransfer });
+  
+      cy.wrap($el).trigger("dragend", { dataTransfer });
     });
-    cy.get(targetEl).trigger('drop',{
-        dataTransfer
-    });
-});
+  });
