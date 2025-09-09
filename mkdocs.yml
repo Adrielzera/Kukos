@@ -38,4 +38,4 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.emoji
 
-docs_dir: docs
+docs_dir: doc-reporting/docs
