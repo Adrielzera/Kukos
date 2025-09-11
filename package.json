@@ -1,0 +1,27 @@
+{
+  "name": "kukos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cypress.config.js",
+  "scripts": {
+    "cy:open": "npx cypress open",
+    "cy:test": "npx cypress run",
+    "cy:mobile:open": "npx cypress open --config viewportWidth=768,viewportHeight=1024",
+    "cy:mobile:test": "npx cypress run --config viewportWidth=768,viewportHeight=1024"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adrielzera/Kukos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Adrielzera/Kukos/issues"
+  },
+  "homepage": "https://github.com/Adrielzera/Kukos#readme",
+  "devDependencies": {
+    "cypress": "^15.0.0"
+  }
+}

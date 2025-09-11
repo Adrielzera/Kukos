@@ -1,5 +1,3 @@
-import '@4tw/cypress-drag-drop';
-
 Cypress.Commands.add('assertEmptyBoard', () => {
   cy.window().then((win) => {
     const board = JSON.parse(win.localStorage.getItem('kanban-boards'));

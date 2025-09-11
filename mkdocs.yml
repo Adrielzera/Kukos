@@ -27,8 +27,7 @@ theme:
     - admonition
     - header.autohide
   icon:
-    logo: material/rocket-launch   # Logo da nav 🚀
-  favicon: assets/favicon.png      # Favicon (colocar em assets/)
+    logo: material/rocket-launch   
 
 markdown_extensions:
   - admonition
