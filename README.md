@@ -50,8 +50,18 @@ npm install
 # Rode o projeto
 npm start
 
-# Execute os testes
-npx cypress open
+## Execução dos testes
+# Execute os testes visualmente
+npm run cy:open
+
+# Execute os testes headless
+npm run cy:test
+
+# Execute os testes visualmente mobile
+npm run cy:mobile:open
+
+# Execute os testes headless mobile
+npm run cy:mobile:test
 ```
 
 ---
