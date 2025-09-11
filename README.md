@@ -1,6 +1,9 @@
 
 # 📝 Automação Kanban
 
+## 🔗 Link 
+- 📘 **Documentação Completa:** [Acessar MkDocs](https://adrielzera.github.io/Kukos/) 
+
 ## 📌 Sobre o Projeto
 Este projeto é um **Kanban** desenvolvido pela Kukos para gerenciar tarefas de forma visual e intuitiva (e descobrir bugs).  
 Além da implementação do quadro Kanban, este repositório contém:  
@@ -66,5 +69,3 @@ npm run cy:mobile:test
 
 ---
 
-## 🔗 Link 
-- 📘 **Documentação Completa:** [Acessar MkDocs](https://adrielzera.github.io/Kukos/) 
