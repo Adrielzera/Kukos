@@ -1,5 +1,5 @@
 
-# 📝 Projeto Kanban - README
+# 📝 Automação Kanban
 
 ## 📌 Sobre o Projeto
 Este projeto é um **Kanban** desenvolvido pela Kukos para gerenciar tarefas de forma visual e intuitiva (e descobrir bugs).  
