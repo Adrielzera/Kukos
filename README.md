@@ -5,7 +5,7 @@
 - 📘 **Documentação Completa:** [Acessar MkDocs](https://adrielzera.github.io/Kukos/) 
 
 ## 📌 Sobre o Projeto
-Este projeto é um **Kanban** desenvolvido pela Kukos para gerenciar tarefas de forma visual e intuitiva (e descobrir bugs).  
+Este projeto é um **Kanban** desenvolvido pela Kukac para gerenciar tarefas de forma visual e intuitiva (e descobrir bugs).  
 Além da implementação do quadro Kanban, este repositório contém:  
 - Documentação detalhada de **bugs, inconsistências visuais e problemas de usabilidade**  
 - **Automação de testes** com Cypress  
